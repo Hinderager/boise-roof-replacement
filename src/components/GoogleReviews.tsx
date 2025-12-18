@@ -6,14 +6,14 @@ import { Button } from '@/components/ui/button'
 import { Star, ChevronLeft, ChevronRight } from 'lucide-react'
 
 const staticReviews = [
-  { author: 'Mike R.', relative_time: '2 weeks ago', rating: 5, text: 'Our AC stopped working on the hottest day of July. Called them and they had a tech out within 2 hours. Fixed the issue quickly and explained everything. Fair price, no pressure. Highly recommend!' },
-  { author: 'Sarah T.', relative_time: '1 month ago', rating: 5, text: 'Had them install a new furnace before winter hit. The crew was professional, cleaned up after themselves, and the new system works great. Our heating bills are noticeably lower now.' },
-  { author: 'David L.', relative_time: '3 weeks ago', rating: 5, text: 'Used them for annual HVAC maintenance. Tech was knowledgeable and thorough. Found a small issue before it became a big problem. Great preventive service at a reasonable price.' },
-  { author: 'Jennifer M.', relative_time: '2 months ago', rating: 5, text: 'Our heat pump was making strange noises. They diagnosed the problem accurately and had the parts to fix it same day. Very impressed with their expertise and efficiency.' },
-  { author: 'Chris B.', relative_time: '1 week ago', rating: 5, text: 'Honest company. They could have sold me a new AC unit but instead recommended a repair that cost a fraction. System has been running perfectly since. Will use them for all our HVAC needs.' },
-  { author: 'Amanda K.', relative_time: '1 month ago', rating: 5, text: 'Emergency furnace repair in January - they answered the phone at 10pm and had someone here by midnight. Saved us from a very cold night. These guys are the real deal.' },
-  { author: 'Tom H.', relative_time: '3 weeks ago', rating: 5, text: 'Just had a new AC system installed. From the estimate to final installation, everything was professional. The techs explained how to use the new thermostat and answered all my questions.' },
-  { author: 'Lisa P.', relative_time: '2 weeks ago', rating: 5, text: 'Best HVAC company in Boise. Fast response, fair prices, quality work. They serviced both our AC and furnace and everything runs perfectly now. Friendly staff too!' },
+  { author: 'Mike R.', relative_time: '2 weeks ago', rating: 5, text: 'Had our entire roof replaced after a hailstorm. They handled everything with the insurance company and the new roof looks amazing. Crew was professional and cleaned up every day before leaving.' },
+  { author: 'Sarah T.', relative_time: '1 month ago', rating: 5, text: 'Got three quotes for a new roof and these guys were the most thorough. Fair price, quality materials, and they finished in two days. Our neighbors have already asked for their number.' },
+  { author: 'David L.', relative_time: '3 weeks ago', rating: 5, text: 'Replaced our 25-year-old roof with architectural shingles. The difference is incredible. They found some rotted decking during the job and took care of it at a fair price. Very honest company.' },
+  { author: 'Jennifer M.', relative_time: '2 months ago', rating: 5, text: 'We went with a metal roof and couldn\'t be happier. The installation team was knowledgeable and answered all our questions. House is noticeably cooler in summer already.' },
+  { author: 'Chris B.', relative_time: '1 week ago', rating: 5, text: 'After a tree branch damaged our roof, they were out the next day with a tarp. Full replacement was done within the week. Insurance process was seamless thanks to their documentation.' },
+  { author: 'Amanda K.', relative_time: '1 month ago', rating: 5, text: 'These guys don\'t cut corners. Removed two layers of old shingles, inspected everything, replaced damaged plywood. Our roof is built to last now. Worth every penny.' },
+  { author: 'Tom H.', relative_time: '3 weeks ago', rating: 5, text: 'Commercial roof replacement for our warehouse. They worked around our business hours and the job was done perfectly. No leaks after the recent storms. Highly recommend for business owners.' },
+  { author: 'Lisa P.', relative_time: '2 weeks ago', rating: 5, text: 'Best roofing company in Boise. From the estimate to the final walkthrough, everything was professional. They even helped us choose colors that matched our home perfectly.' },
 ]
 
 export function GoogleReviews() {

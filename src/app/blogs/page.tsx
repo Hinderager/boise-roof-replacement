@@ -3,43 +3,43 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'HVAC Blog | Heating & Cooling Tips | Boise HVAC Pros',
-  description: 'Expert tips, guides, and insights about heating and air conditioning in Boise and the Treasure Valley. Learn from the pros at Boise HVAC Pros.',
+  title: 'Roof Replacement Blog | Expert Tips & Advice | Boise Roof Replacement',
+  description: 'Expert tips, guides, and insights about roof replacement in Boise and the Treasure Valley. Learn from experienced roofing professionals.',
   alternates: {
-    canonical: 'https://hvac-boise.com/blogs',
+    canonical: 'https://boise-roof-replacement.com/blogs',
   },
 }
 
 const blogPosts = [
   {
-    slug: 'hvac-pricing-explained',
-    title: 'HVAC Service Pricing: How It Actually Works',
-    excerpt: 'Wondering what HVAC repairs or installations cost in Boise? Here\'s the straightforward explanation.',
-    image: '/hero-hvac.jpg',
+    slug: 'roof-replacement-cost-boise',
+    title: 'How Much Does Roof Replacement Cost in Boise?',
+    excerpt: 'Real numbers from actual Treasure Valley roof replacement projects. What affects the price and what you should expect.',
+    image: '/generated/roof-replacement-cost.webp',
   },
   {
-    slug: 'signs-ac-needs-repair',
-    title: '7 Signs Your AC Needs Repair (Before It Dies Completely)',
-    excerpt: 'Your AC is probably warning you before it fails. Here\'s what to watch for.',
-    image: '/hero-hvac.jpg',
+    slug: 'signs-need-roof-replacement',
+    title: 'Signs You Need a New Roof',
+    excerpt: 'Your roof is probably warning you before it fails. Here\'s what to watch for in Boise homes.',
+    image: '/generated/signs-need-roof-replacement.webp',
   },
   {
-    slug: 'repair-vs-replace-furnace',
-    title: 'Should You Repair or Replace Your Furnace?',
-    excerpt: 'Sometimes repair makes sense. Sometimes you\'re just throwing money away. Here\'s how to decide.',
-    image: '/hero-hvac.jpg',
+    slug: 'choosing-roofing-materials-boise',
+    title: 'Choosing Roofing Materials for Boise Homes',
+    excerpt: 'What works best for Idaho\'s hot summers, cold winters, and everything in between.',
+    image: '/generated/choosing-roofing-materials.webp',
   },
   {
-    slug: 'choosing-hvac-contractor-boise',
-    title: 'How to Choose an HVAC Contractor in Boise',
-    excerpt: 'Not all HVAC companies are the same. Here\'s what to look for and what to avoid.',
-    image: '/hero-hvac.jpg',
+    slug: 'roof-replacement-process',
+    title: 'What to Expect During Roof Replacement',
+    excerpt: 'A realistic look at what happens when you get a new roof installed in Boise.',
+    image: '/generated/roof-replacement-process.webp',
   },
   {
-    slug: 'seasonal-hvac-maintenance',
-    title: 'Seasonal HVAC Maintenance for Idaho Homes',
-    excerpt: 'Idaho puts your HVAC through extremes. Here\'s how to keep it running through hot summers and cold winters.',
-    image: '/hero-hvac.jpg',
+    slug: 'best-time-roof-replacement-boise',
+    title: 'Best Time for Roof Replacement in Boise',
+    excerpt: 'When should you schedule your roof replacement? Here\'s what works best in Idaho.',
+    image: '/generated/best-time-roof-replacement.webp',
   },
 ]
 
@@ -50,10 +50,10 @@ export default function BlogsPage() {
       <section className="py-16 bg-gradient-to-b from-dark-blue to-[#1a5a9e]">
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4">
-            Our Blog
+            Roofing Blog
           </h1>
           <p className="text-xl text-white/90 max-w-2xl mx-auto">
-            Tips, guides, and insights about heating and cooling in the Treasure Valley. Real advice from real HVAC professionals.
+            Tips, guides, and insights about roof replacement in the Treasure Valley. Real advice from experienced roofing professionals.
           </p>
         </div>
       </section>
@@ -66,9 +66,12 @@ export default function BlogsPage() {
               <article key={post.slug} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
                 <Link href={`/blogs/${post.slug}`}>
                   <div className="relative h-48 bg-dark-blue">
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <span className="text-white/20 text-6xl font-bold">HVAC</span>
-                    </div>
+                    <Image
+                      src={post.image}
+                      alt={post.title}
+                      fill
+                      className="object-cover"
+                    />
                   </div>
                   <div className="p-6">
                     <h2 className="text-xl font-bold text-gunmetal mb-2 hover:text-dark-blue transition-colors">
@@ -95,14 +98,14 @@ export default function BlogsPage() {
       <section className="py-16 bg-dark-blue">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold text-white mb-4">
-            Ready to Get Started?
+            Need a New Roof?
           </h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-            Contact us today for a free estimate on your HVAC project.
+            Contact us today for a free estimate on your roof replacement project in Boise.
           </p>
           <a
             href="tel:2085059352"
-            className="inline-block bg-[#FFC845] hover:bg-yellow-400 text-dark-blue font-bold text-lg px-8 py-4 rounded-lg transition-colors"
+            className="inline-block bg-white hover:bg-gray-100 text-dark-blue font-bold text-lg px-8 py-4 rounded-lg transition-colors"
           >
             Call (208) 505-9352
           </a>

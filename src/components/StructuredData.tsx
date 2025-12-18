@@ -7,12 +7,12 @@ const cityCoordinates: Record<string, { lat: number; lng: number }> = {
 }
 
 const faqData = [
-  { question: 'How much does HVAC repair cost in Boise?', answer: 'Most HVAC repairs in Boise cost between $150-500 depending on the issue. Diagnostic fees typically start around $89 and get applied to the repair cost. We provide exact quotes before any work begins.' },
-  { question: 'How often should I service my HVAC system?', answer: 'We recommend servicing your HVAC system twice a year—once in spring for AC and once in fall for heating. Regular maintenance prevents costly breakdowns and extends equipment life.' },
-  { question: 'Do you offer 24/7 emergency HVAC service?', answer: 'Yes! We offer 24/7 emergency heating and AC repair throughout the Treasure Valley. Call (208) 505-9352 for immediate service.' },
-  { question: 'How long does a new furnace or AC installation take?', answer: 'Most standard installations take one day. Complex installations involving both furnace and AC or ductwork may take two days.' },
-  { question: 'What HVAC brands do you service?', answer: 'We service all major brands including Carrier, Trane, Lennox, Rheem, Goodman, Bryant, American Standard, and more.' },
+  { question: 'How much does roof replacement cost in Boise?', answer: 'Most residential roof replacements in Boise cost between $8,000-$25,000 depending on size, materials, and complexity. We provide free estimates with no obligation.' },
+  { question: 'How long does a roof replacement take?', answer: 'Most residential roof replacements take 1-3 days. Larger homes or commercial buildings may take longer. We provide a timeline before starting.' },
+  { question: 'What roofing materials do you install?', answer: 'We install asphalt shingles, metal roofing, tile, and flat roofing systems. We\'ll help you choose the best option for your home and budget.' },
+  { question: 'Do you help with insurance claims?', answer: 'Yes! We work with insurance companies regularly for storm damage claims. We document everything and help ensure you get fair coverage.' },
   { question: 'What areas do you serve?', answer: 'We serve Boise, Meridian, Nampa, Caldwell, Eagle, and surrounding Treasure Valley communities.' },
+  { question: 'What warranty do you offer?', answer: 'We provide workmanship warranty on all installations plus manufacturer warranties on materials (25-50 years for shingles, longer for metal).' },
 ]
 
 export function StructuredData({ city = 'Boise' }: { city?: string }) {
@@ -20,12 +20,12 @@ export function StructuredData({ city = 'Boise' }: { city?: string }) {
 
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "HVACBusiness",
-    "name": `Boise HVAC Pros - ${city}`,
-    "description": `Professional HVAC services in ${city}, Idaho. AC repair, furnace installation, heating services. Licensed and insured. 24/7 emergency service.`,
-    "url": "https://hvac-boise.com",
+    "@type": "RoofingContractor",
+    "name": `Boise Roof Replacement Pros - ${city}`,
+    "description": `Professional roof replacement services in ${city}, Idaho. Residential and commercial roofing, asphalt shingles, metal roofing. Licensed and insured. Free estimates.`,
+    "url": "https://boise-roof-replacement.com",
     "telephone": "+1-208-505-9352",
-    "email": "info@hvac-boise.com",
+    "email": "info@boise-roof-replacement.com",
     "address": { "@type": "PostalAddress", "addressLocality": city, "addressRegion": "ID", "addressCountry": "US" },
     "geo": { "@type": "GeoCoordinates", "latitude": coords.lat, "longitude": coords.lng },
     "areaServed": [
@@ -35,22 +35,22 @@ export function StructuredData({ city = 'Boise' }: { city?: string }) {
       { "@type": "City", "name": "Caldwell", "addressRegion": "ID" },
       { "@type": "City", "name": "Eagle", "addressRegion": "ID" }
     ],
-    "serviceType": ["AC Repair", "AC Installation", "Furnace Repair", "Furnace Installation", "HVAC Maintenance", "Emergency HVAC Service", "Heating Repair", "Air Conditioning Service"],
+    "serviceType": ["Roof Replacement", "Residential Roofing", "Commercial Roofing", "Asphalt Shingle Installation", "Metal Roof Installation", "Storm Damage Repair", "Roof Inspection"],
     "priceRange": "$$",
     "openingHoursSpecification": [
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "07:00", "closes": "19:00" },
-      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday", "Sunday"], "opens": "00:00", "closes": "23:59", "description": "24/7 Emergency Service" }
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "07:00", "closes": "18:00" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Saturday"], "opens": "08:00", "closes": "14:00" }
     ],
-    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "87" }
+    "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "150" }
   }
 
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
-    "serviceType": "HVAC Services",
-    "provider": { "@type": "HVACBusiness", "name": "Boise HVAC Pros" },
+    "serviceType": "Roof Replacement",
+    "provider": { "@type": "RoofingContractor", "name": "Boise Roof Replacement Pros" },
     "areaServed": { "@type": "State", "name": "Idaho" },
-    "description": `Professional heating and air conditioning services in ${city} and the Treasure Valley. AC repair, furnace installation, HVAC maintenance, and 24/7 emergency service.`
+    "description": `Professional roof replacement services in ${city} and the Treasure Valley. Residential and commercial roofing, premium materials, and expert installation.`
   }
 
   const faqSchema = {

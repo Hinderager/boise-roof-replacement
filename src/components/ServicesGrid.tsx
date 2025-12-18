@@ -2,15 +2,15 @@
 
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
-import { Snowflake, Flame, Wrench, ThermometerSun } from 'lucide-react'
+import { Home, Building2, Layers, AlertTriangle } from 'lucide-react'
 import { useQuoteForm } from '@/context/QuoteFormContext'
 import Link from 'next/link'
 
 const services = [
-  { icon: Snowflake, title: 'AC Repair & Installation', description: 'Keep cool all summer. We fix any AC problem and install new systems with expert precision.', href: '/services/air-conditioning' },
-  { icon: Flame, title: 'Heating & Furnace', description: 'Stay warm when it matters. Furnace repairs, replacements, and tune-ups you can count on.', href: '/services/furnaces' },
-  { icon: Wrench, title: 'HVAC Maintenance', description: 'Prevent costly breakdowns. Regular maintenance keeps your system running efficiently year-round.', href: '/resources/maintenance-plans' },
-  { icon: ThermometerSun, title: '24/7 Emergency Service', description: 'No heat in January? AC out in July? We respond fast when you need us most.', href: '/services/air-conditioning/emergency-ac-repair' },
+  { icon: Home, title: 'Residential Roofing', description: 'Complete roof replacement for homes of all sizes. Protect your family with a new, durable roof built to last.', href: '/services/residential' },
+  { icon: Building2, title: 'Commercial Roofing', description: 'Professional roof replacement for businesses, warehouses, and multi-family properties throughout the Treasure Valley.', href: '/services/commercial' },
+  { icon: Layers, title: 'Premium Materials', description: 'Choose from asphalt shingles, metal roofing, tile, and flat roofing systems. We install the best brands.', href: '/services/roofing-materials' },
+  { icon: AlertTriangle, title: 'Storm Damage', description: 'Hail, wind, or fallen trees damage your roof? We handle insurance claims and get your home protected fast.', href: '/services/roof-replacement/storm-damage-replacement' },
 ]
 
 export function ServicesGrid() {
@@ -24,7 +24,7 @@ export function ServicesGrid() {
       <div className="container mx-auto px-4 relative z-10">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-heading font-bold text-dark-blue mb-4 uppercase" style={{textShadow: '2px 2px 3px rgba(0,0,0,0.3), 1px 1px 2px rgba(0,0,0,0.2)'}}>Our Services</h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">Professional heating and cooling services for the Treasure Valley</p>
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">Professional roof replacement services for the Treasure Valley</p>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">

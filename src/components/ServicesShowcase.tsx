@@ -3,10 +3,11 @@ import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 
 const services = [
-  { title: 'AC Repair & Service', description: 'When your AC stops cooling on a hot Boise summer day, you need help fast. We diagnose the problem quickly and fix it right the first time. Whether it\'s a refrigerant leak, compressor issue, or electrical problem—we\'ve seen it all and know how to get your system running again.', image: '/generated/ac-repair.webp', link: '/ac-repair', buttonText: 'Learn More' },
-  { title: 'Furnace Repair & Installation', description: 'Idaho winters don\'t mess around. When your furnace goes out, we respond fast to get your heat back on. From pilot light problems to complete system failures, our techs handle it all. And if you need a new furnace, we\'ll help you choose the right one for your home and budget.', image: '/generated/furnace-installation.webp', link: '/furnace-installation', buttonText: 'Learn More' },
-  { title: 'Preventive Maintenance', description: 'The best way to avoid emergency repairs? Regular maintenance. We inspect, clean, and tune your system so it runs efficiently and catches small problems before they become expensive disasters. Most breakdowns are preventable with proper care.', image: '/generated/hvac-maintenance.webp', link: '/hvac-maintenance', buttonText: 'Learn More' },
-  { title: '24/7 Emergency Service', description: 'No heat at 2 AM in January? AC died during a 100-degree heat wave? Some things can\'t wait until Monday. Our emergency technicians are available around the clock, every day of the year. We\'ll get to you fast and fix the problem so you can get back to comfortable.', image: '/generated/emergency-hvac.webp', link: '/emergency-hvac', buttonText: 'Learn More' },
+  { title: 'Full Roof Replacement', description: 'When your roof is past its prime, patching it up will not cut it anymore. We tear off the old materials and install a completely new system that protects your home for decades. From asphalt shingles to metal, we handle every step and clean up like we were never there.', image: '/generated/full-roof-replacement.webp', link: '/services/full-roof-replacement', buttonText: 'Learn More' },
+  { title: 'Shingle Replacement', description: 'Missing shingles after a windstorm? Damaged spots from hail? You do not always need a whole new roof. We match your existing shingles and replace just what needs fixing. Quick work, no mess, and your roof looks good as new.', image: '/generated/shingle-replacement.webp', link: '/services/shingle-replacement', buttonText: 'Learn More' },
+  { title: 'Metal Roof Installation', description: 'Metal roofs last 50+ years and handle Idaho weather like champs. They are energy-efficient, fire-resistant, and honestly just look sharp. We install standing seam, corrugated, and metal shingle systems. If you want a roof that outlasts everything else on your house, this is it.', image: '/generated/metal-roof-installation.webp', link: '/services/metal-roof-installation', buttonText: 'Learn More' },
+  { title: 'Tile Roof Replacement', description: 'Tile roofs are tough, beautiful, and built to last but when they crack or slip, you need someone who knows what they are doing. We work with clay and concrete tiles, matching styles perfectly. These roofs add serious curb appeal and hold up against Boise summers without breaking a sweat.', image: '/generated/tile-roof-replacement.webp', link: '/services/tile-roof-replacement', buttonText: 'Learn More' },
+  { title: 'Flat Roof Systems', description: 'Flat roofs need different materials and techniques than pitched roofs. We install TPO, EPDM, and modified bitumen systems that handle ponding water and UV exposure. Whether it is your garage, addition, or commercial building, we keep it watertight and worry-free.', image: '/generated/flat-roof-replacement.webp', link: '/services/flat-roof-replacement', buttonText: 'Learn More' },
 ]
 
 export function ServicesShowcase() {
@@ -14,8 +15,8 @@ export function ServicesShowcase() {
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-heading font-bold text-dark-blue mb-4 uppercase" style={{textShadow: '2px 2px 3px rgba(0,0,0,0.3), 1px 1px 2px rgba(0,0,0,0.2)'}}>Serving Boise and the Treasure Valley</h2>
-          <p className="text-xl text-gray-600 max-w-4xl mx-auto">From Boise to Nampa, Meridian to Caldwell, we keep homes and businesses comfortable year-round with reliable HVAC service.</p>
+          <h2 className="text-4xl md:text-5xl font-heading font-bold text-dark-blue mb-4 uppercase" style={{textShadow: '2px 2px 3px rgba(0,0,0,0.3), 1px 1px 2px rgba(0,0,0,0.2)'}}>Roof Replacement Services in Boise</h2>
+          <p className="text-xl text-gray-600 max-w-4xl mx-auto">From Boise to Nampa, Meridian to Caldwell, we replace roofs that protect Treasure Valley homes and businesses from Idaho weather.</p>
         </div>
 
         <div className="max-w-7xl mx-auto space-y-16">

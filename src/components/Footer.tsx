@@ -18,23 +18,23 @@ export function Footer() {
           <div>
             <h4 className="text-xl font-bold mb-4 text-light-blue">Services</h4>
             <ul className="space-y-2">
-              <li><Link href="/ac-repair" className="text-white/80 hover:text-white transition-colors">AC Repair</Link></li>
-              <li><Link href="/ac-installation" className="text-white/80 hover:text-white transition-colors">AC Installation</Link></li>
-              <li><Link href="/heating-repair" className="text-white/80 hover:text-white transition-colors">Heating Repair</Link></li>
-              <li><Link href="/furnace-installation" className="text-white/80 hover:text-white transition-colors">Furnace Installation</Link></li>
-              <li><Link href="/hvac-maintenance" className="text-white/80 hover:text-white transition-colors">HVAC Maintenance</Link></li>
-              <li><Link href="/emergency-hvac" className="text-white/80 hover:text-white transition-colors">24/7 Emergency</Link></li>
+              <li><Link href="/services/roof-replacement" className="text-white/80 hover:text-white transition-colors">Roof Replacement</Link></li>
+              <li><Link href="/services/roofing-materials/asphalt-shingles" className="text-white/80 hover:text-white transition-colors">Asphalt Shingles</Link></li>
+              <li><Link href="/services/roofing-materials/metal-roofing" className="text-white/80 hover:text-white transition-colors">Metal Roofing</Link></li>
+              <li><Link href="/services/residential" className="text-white/80 hover:text-white transition-colors">Residential Roofing</Link></li>
+              <li><Link href="/services/commercial" className="text-white/80 hover:text-white transition-colors">Commercial Roofing</Link></li>
+              <li><Link href="/services/roof-replacement/emergency-roof-replacement" className="text-white/80 hover:text-white transition-colors">Emergency Service</Link></li>
             </ul>
           </div>
 
           <div>
             <h4 className="text-xl font-bold mb-4 text-light-blue">Service Areas</h4>
             <ul className="space-y-2">
-              <li><Link href="/boise" className="text-white/80 hover:text-white transition-colors">Boise</Link></li>
-              <li><Link href="/meridian" className="text-white/80 hover:text-white transition-colors">Meridian</Link></li>
-              <li><Link href="/nampa" className="text-white/80 hover:text-white transition-colors">Nampa</Link></li>
-              <li><Link href="/caldwell" className="text-white/80 hover:text-white transition-colors">Caldwell</Link></li>
-              <li><Link href="/eagle" className="text-white/80 hover:text-white transition-colors">Eagle</Link></li>
+              <li><Link href="/cities-served/boise" className="text-white/80 hover:text-white transition-colors">Boise</Link></li>
+              <li><Link href="/cities-served/meridian" className="text-white/80 hover:text-white transition-colors">Meridian</Link></li>
+              <li><Link href="/cities-served/nampa" className="text-white/80 hover:text-white transition-colors">Nampa</Link></li>
+              <li><Link href="/cities-served/caldwell" className="text-white/80 hover:text-white transition-colors">Caldwell</Link></li>
+              <li><Link href="/cities-served/eagle" className="text-white/80 hover:text-white transition-colors">Eagle</Link></li>
             </ul>
           </div>
 
@@ -47,7 +47,7 @@ export function Footer() {
               </li>
               <li className="flex items-start gap-3">
                 <Mail className="h-5 w-5 text-[#ff6b35] flex-shrink-0 mt-1" />
-                <a href="mailto:info@hvac-boise.com" className="text-white/80 hover:text-white transition-colors">info@hvac-boise.com</a>
+                <a href="mailto:info@boise-roof-replacement.com" className="text-white/80 hover:text-white transition-colors">info@boise-roof-replacement.com</a>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 text-[#ff6b35] flex-shrink-0 mt-1" />
@@ -55,7 +55,7 @@ export function Footer() {
               </li>
               <li className="flex items-start gap-3">
                 <Clock className="h-5 w-5 text-[#ff6b35] flex-shrink-0 mt-1" />
-                <p className="text-white/80">Mon-Fri: 7am - 7pm<br />24/7 Emergency Service</p>
+                <p className="text-white/80">Mon-Fri: 7am - 6pm<br />Sat: 8am - 2pm</p>
               </li>
             </ul>
           </div>
@@ -69,7 +69,7 @@ export function Footer() {
               <span className="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center"><Linkedin className="h-5 w-5" /></span>
             </div>
             <div className="text-center md:text-right">
-              <p className="text-white/60 text-sm">&copy; {new Date().getFullYear()} Boise HVAC Pros. All rights reserved.</p>
+              <p className="text-white/60 text-sm">&copy; {new Date().getFullYear()} Boise Roof Replacement Pros. All rights reserved.</p>
               <div className="flex gap-4 mt-2 justify-center md:justify-end">
                 <Link href="/privacy" className="text-white/60 text-sm hover:text-white transition-colors">Privacy Policy</Link>
                 <Link href="/terms" className="text-white/60 text-sm hover:text-white transition-colors">Terms of Service</Link>
