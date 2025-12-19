@@ -62,6 +62,9 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
+  alternates: {
+    canonical: 'https://boise-roof-replacement.com',
+  },
 }
 
 export const viewport: Viewport = {
